@@ -6,6 +6,6 @@ import com.example.demo.service.StudentService;
 public class StudentServiceImpl implements StudentService {
     @override
     public Student poststudent(Student st){
-        
+        student
     }
 }

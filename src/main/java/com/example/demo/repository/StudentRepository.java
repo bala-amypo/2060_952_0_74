@@ -1,3 +1,5 @@
 package com.example.demo.repository;
 
-public interface StudentRepository extends Jpa
+public interface StudentRepository extends JpaRepository{
+    
+}

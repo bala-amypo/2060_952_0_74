@@ -1,9 +1,12 @@
 package com.example.demo.entity;
 
 import java.time.LocalDate;
+
+import jakarta.parsistence.*;
 @Entity
 public class Student{
-    `private Long id;
+    @Id
+    private Long id;
     private String name;
     private String dept;
     private LocalDate dob;

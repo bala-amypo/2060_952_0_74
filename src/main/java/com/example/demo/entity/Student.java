@@ -2,7 +2,7 @@ package com.example.demo.entity;
 
 import java.time.LocalDate;
 
-import jakarta.parsistence.*;
+import jakarta.persistence.*;
 @Entity
 public class Student{
     @Id
@@ -13,7 +13,7 @@ public class Student{
     private LocalDate dob;
     private float cgpa;
     public Long getId() {
-    return id;
+        return id;
     }
     public void setId(Long id) {
         this.id = id;
@@ -45,12 +45,11 @@ public class Student{
     public Student(){
 
     }
-    public Student(Long id,String nmae,String dept,LocalDate dob,float cgpa){
+    public Student(Long id,String name,String dept,LocalDate dob,float cgpa){
         this.id=id;
         this.name=name;
         this.dept=dept;
         this.dob=dob;
         this.cgpa=cgpa;
     }
-
 }

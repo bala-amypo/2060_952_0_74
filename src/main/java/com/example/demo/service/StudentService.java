@@ -1,5 +1,7 @@
-package com.example.demo.repository
+package com.example.demo.service;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-import org.
+import com.example.demo.entity.Student;
+
+public interface StudentService{
+    Student poststudent(Student st);
+}

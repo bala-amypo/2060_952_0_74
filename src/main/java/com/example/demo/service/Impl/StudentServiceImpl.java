@@ -1,16 +1,49 @@
-package com.example.demo.service.impl;
+package com.example.demo.entity;
 
-import com.example.demo.repository.StudentRepository;
-import org.springframework.stereotype.Service;
-import com.example.demo.service.StudentService;
-import com.example.demo.entity.Student;
-import org.springframework.beans.factory.annotation.Autowired;
-@Service
-public class StudentServiceImpl implements StudentService {
-    @Autowired
-    StudentRepository stdrepo;
-    @Override
-    public Student poststudent(Student st){
-        return stdrepo.save(st);
+public class Influencer {
+
+    private int id;
+    private String name;
+    private String socialHandle;
+    private boolean active = true;
+
+    public Influencer() {}
+
+    public Influencer(int id, String name, String socialHandle) {
+        this.id = id;
+        this.name = name;
+        this.socialHandle = socialHandle;
     }
-}
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSocialHandle() {
+        return socialHandle;
+    }
+
+    public void setSocialHandle(String socialHandle) {
+        this.socialHandle = socialHandle;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+} 
